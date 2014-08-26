@@ -26,7 +26,8 @@ return array(
     'templates' => array(
         'core'       => 'vendor/hatframework/hat-template-core',
         'area-admin' => 'vendor/hatframework/hat-template-area-admin',
-        'rf'         => 'Application/templates/rf',
+        'ppdh' 		 => 'vendor/hatframework/hat-template-ppdh',
+        //'privatetemplate'         => 'Application/templates/privatetemplate',
     ),
     'resources' => array(
         'api'        => 'vendor/hatframework/hat-resource-api',

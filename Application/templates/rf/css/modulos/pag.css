@@ -1,6 +1,0 @@
-.fts { border: 1px solid #464A54; height: 60px; overflow: hidden; margin: 3px; padding: 5px; }
-
-#pag_venda_edit_form .form_item { float: left; width: 45%; margin: 5px; }
-#pag_venda_edit_form .form_item#f_detalhes, #pag_venda_edit_form .form_item#f_parcelas, #pag_venda_edit_form .form_item#f_produtos { width: 100%; }
-#pag_venda_edit_form .btn-container { clear: both; width: 100%; }
-#pag_venda_edit_form .btn { margin: 3px; margin-top: 5px; }
