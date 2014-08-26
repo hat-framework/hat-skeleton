@@ -1,0 +1,64 @@
+{
+    "name": "hatframework/hat-skeleton",
+	"type": "project",
+    "description": "hatframework skeleton package",
+    "keywords": [],
+    "homepage": "https://github.com/hat-framework/hat-skeleton",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://localhost:4680"
+        }
+    ],
+ 
+    "require": {
+        "aws/aws-sdk-php": "dev-master",
+        "php": ">=5.3.0",
+        "omnipay/paypal": "~2.0",
+        "tritoq/cielo": "dev-master",
+
+        "hatframework/basehat": "0.1.5",
+        "hatframework/hatclasses": "0.2.11",
+        
+        "hatframework/hat-plugin-admin":"0.1.7",
+        "hatframework/hat-plugin-api":"0.1.6",
+        "hatframework/hat-plugin-app":"0.1.6",
+        "hatframework/hat-plugin-blog":"0.1.6",
+        "hatframework/hat-plugin-files":"0.1.6",
+        "hatframework/hat-plugin-galeria":"0.1.6",
+        "hatframework/hat-plugin-gerador":"0.1.6",
+        "hatframework/hat-plugin-index":"0.1.6",
+        "hatframework/hat-plugin-institucional":"0.1.6",
+        "hatframework/hat-plugin-notificacao":"0.1.9",
+        "hatframework/hat-plugin-plugins": "0.1.9",
+        "hatframework/hat-plugin-site":"0.2.0",
+        "hatframework/hat-plugin-simplecontact":"0.1.2",
+        "hatframework/hat-plugin-usuario":"0.1.12",
+        
+        "hatframework/hat-resource-api": "0.3.4",
+        "hatframework/hat-resource-boleto":"0.3.4",
+        "hatframework/hat-resource-charts": "0.3.4",
+        "hatframework/hat-resource-curl":"0.3.4",
+        "hatframework/hat-resource-database":"0.3.4",
+        "hatframework/hat-resource-email":"0.3.6",
+        "hatframework/hat-resource-files":"0.3.5",
+        "hatframework/hat-resource-formulario":"0.3.6",
+        "hatframework/hat-resource-galerias":"0.3.4",
+        "hatframework/hat-resource-grid":"0.3.4",
+        "hatframework/hat-resource-html":"0.3.8",
+        "hatframework/hat-resource-jqueryui":"0.3.5",
+        "hatframework/hat-resource-js":"0.3.4",
+        "hatframework/hat-resource-menu":"0.3.4",
+        "hatframework/hat-resource-mobile":"0.3.4",
+        "hatframework/hat-resource-pagamento":"0.3.4",
+        "hatframework/hat-resource-pdf":"0.3.4",
+        "hatframework/hat-resource-server":"0.3.4",
+        "hatframework/hat-resource-slider":"0.3.4",
+        "hatframework/hat-resource-sms":"0.3.4",
+        "hatframework/hat-resource-upload":"0.3.4",
+        
+        "hatframework/hat-template-area-admin": "0.1.2",
+        "hatframework/hat-template-core": "0.1.2"
+    }
+}

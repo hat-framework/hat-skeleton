@@ -1,0 +1,16 @@
+#retira o http:// da url do site
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} ^www.(.+)$ [NC]
+  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+</IfModule>
+
+# pega todas as variaveis via get e passa para a variavel url
+RewriteEngine On
+
+# Definindo o idioma. Recursos como x-webkit-speech (http://migre.me/46mS9) usam o idioma padrão.
+DefaultLanguage pt-BR
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1

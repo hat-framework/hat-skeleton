@@ -1,0 +1,15 @@
+#files_arquivo .list-item{
+    
+    min-width:320px;
+    width: 30%;
+    float:left; 
+    margin: 3px; 
+    text-align:center;
+}
+
+#files_arquivo .list-item .img{
+    height:200px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}

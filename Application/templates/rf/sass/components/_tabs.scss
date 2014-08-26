@@ -1,0 +1,5 @@
+#usertabs ul{
+    @extend .nav;
+    @extend .tab-menu;
+    @extend .nav-tabs;  
+}

@@ -1,0 +1,42 @@
+.widget_right { width: 35%; float: right; }
+
+.widget_empresa_empresa { width: 60%; float: left; }
+
+#empresa_empresa .box-content { margin: 3px; height: 100px; }
+
+#empresa_image { height: 80px; float: left; margin-right: 15px; }
+
+ul#empresa_curso { margin: 0; }
+ul#empresa_curso .list_empresa_curso { display: inline-block; border-top: 1px solid #8e8bf0; margin: 3px; padding: 3px; width: 97%; min-height: 40px; }
+ul#empresa_curso .list_empresa_curso .title { font-size: 18px; display: block; }
+ul#empresa_curso .list_empresa_curso .show { position: relative; bottom: 0; margin-top: 5px; }
+ul#empresa_curso .container { width: auto; }
+
+#subscribe input[type="email"] { width: 90%; }
+
+#widget_empresa_balanco, .widget_balancowidget { position: relative; }
+#widget_empresa_balanco #empresa_balanco, .widget_balancowidget #empresa_balanco { height: 350px; overflow: auto; margin-top: 20px; }
+#widget_empresa_balanco #empresa_balanco table .acoes, .widget_balancowidget #empresa_balanco table .acoes { display: none; }
+#widget_empresa_balanco #empresa_balanco table .nrvalor, .widget_balancowidget #empresa_balanco table .nrvalor { text-align: right; }
+
+#empresa_dashboard { margin-top: 5px; }
+
+/*.empresa_principais_item{ overflow: visible; height: 90px; img{
+	height:70px;
+	position:relative; margin: 10px 0 0 10px; }
+}*/
+.excelente { color: #04B404 !important; }
+
+.bom { color: #04B486 !important; }
+
+.regular { color: #AEB404 !important; }
+
+.ruim { color: #DF01D7 !important; }
+
+.pessimo { color: #DF0101 !important; }
+
+.powered { font-size: 14px; font-style: italic; }
+
+.width-fix { width: 100%; }
+
+.gf { height: 300px; overflow: auto; margin: 0 auto; position: relative; top: 0; left: 0; }

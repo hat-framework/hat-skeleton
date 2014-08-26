@@ -1,0 +1,10 @@
+/nbproject/private/
+/Application/static/js/bower_components/
+/Application/static/js/node_modules/
+/Application/static/files/img/
+/Application/p/
+/vendor/
+/composer.lock
+composer.lock
+/sitemap.xml
+sitemap.xml
