@@ -35,7 +35,9 @@ INSTALAÇÃO DO COMPOSER NO WINDOWS
 
 10 - Digite cd CAMINHOONDEESTÁOHAT
 
-11 - php composer.phar update
+11 - C:\bin>php -r "readfile('https://getcomposer.org/installer');" | php
+
+12 - php composer.phar update
 
 </h2>INSTALAÇÃO DO BOWER (Javascript)</h2>
 
