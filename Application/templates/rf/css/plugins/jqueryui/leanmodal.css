@@ -1,0 +1,30 @@
+.lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+.lean_modal {
+	min-width: 600px;
+	padding: 30px;
+	display: none;
+	background: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0px 8px rgba(0,0,0,0.4);
+}
+
+.lean_modal.wide {
+    min-width: 900px;
+}
+.lean_modal.narrow {
+    min-width: 225px;
+}

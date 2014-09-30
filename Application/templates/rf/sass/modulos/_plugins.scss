@@ -1,0 +1,30 @@
+#instalado{
+    @extend .label-success;
+}
+
+#desinstalado{
+    @extend .label-important;
+}
+
+#plugins_acesso{
+    .s{
+        @extend .blue;
+    }
+    .n{
+        @extend .red;
+    }
+    
+    .action_perm.bloquear{
+        @extend .btn;
+        @extend .btn-danger;
+    }
+
+    .action_perm.permitir{
+        @extend .btn;
+        @extend .btn-success;
+    }
+}
+
+#site_configuracao{
+    h2{color:#262626;}
+}
