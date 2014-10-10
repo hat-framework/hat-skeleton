@@ -9,7 +9,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <!-- start: Mobile Specific -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- end: Mobile Specific -->
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -68,6 +68,7 @@
                             <div class="">
                                 <?php
                                     if(isset($show_links)) \classes\Component\Component::displayPathLinks($show_links);
+                                    $this->LoadRegion("breadcrumb");
                                     $this->LoadRegion("body-top");
                                 ?>
                             </div>
@@ -80,42 +81,39 @@
                                 ?>
                             </div>
                         <!-- end: Content -->
-                        </div><!--/#content.span10-->
+                        </div>
                 </div>
             <!--/fluid-row-->
-
-
-
-                <div class="clearfix"></div>
-                <hr>
+            <div class="clearfix"></div>
+            <hr/>
 
         </div><!--/.fluid-container-->
         <div class="sub-footer">
             <div class="span3 bloco">
                 <h3>Análise de Empresas</h3>
-                <a href='<?php echo $this->Html->getLink('empresa/empresa/index');?>'>Todas as Empresas</a><br>
-                <a href='<?php echo $this->Html->getLink('empresa/empresa/ibovespa');?>'>Empresas IBOVESPA</a><br>
-                <a href='<?php echo $this->Html->getLink('filtro/index/index');?>'>Filtro de ações</a><br>
+                <a href='<?php echo $this->Html->getLink('empresa/empresa/index');?>'>Todas as Empresas</a><br/>
+                <a href='<?php echo $this->Html->getLink('empresa/empresa/ibovespa');?>'>Empresas IBOVESPA</a><br/>
+                <a href='<?php echo $this->Html->getLink('filtro/index/index');?>'>Filtro de ações</a><br/>
                 <a href='<?php echo $this->Html->getLink('filtro/index/compara');?>'>Comparar Empresas</a>
             </div>
             <div class="span3 bloco">
                 <h3>Mais Serviços</h3>
-                <a href='<?php echo $this->Html->getLink('service/index/index');?>'>Para Sites e Blogs</a><br>
+                <a href='<?php echo $this->Html->getLink('service/index/index');?>'>Para Sites e Blogs</a><br/>
                 <a href='<?php echo $this->Html->getLink('carteira/index/index');?>'>Gerenciador de Investimentos</a>
             </div>
             <div class="span3 bloco">
                 <h3>Oportunidade</h3>
-                <a href='<?php echo $this->Html->getLink('pagamento/produto/index');?>'>Planos & Preços</a><br>
+                <a href='<?php echo $this->Html->getLink('pagamento/produto/index');?>'>Planos & Preços</a><br/>
                 <a href='<?php echo $this->Html->getLink('index/produto/index');?>'>Pré-venda limitada do Gerenciador de Investimentos</a>
             </div>
             <div class="span3 bloco">
                 <h3>Institucional</h3>
-                <a href='<?php echo $this->Html->getLink('institucional/parceria/index');?>'>Parceiros</a><br>
-                contato@finance-e.com <br>
-                Tel. (31)3771-6322 <br>
+                <a href='<?php echo $this->Html->getLink('institucional/parceria/index');?>'>Parceiros</a><br/>
+                contato@finance-e.com <br/>
+                Tel. (31)3771-6322 <br/>
                 Cel. (31)9110-3894
             </div>  
-        </div><br>
+        </div><br/>
         <div class="footer">
                     <p class="pull-left">&copy; <a href="/" target="_blank"><?php echo SITE_NOME; ?></a> 2014</p>
                     <p class="pull-right"><?php echo SITE_SLOGAN; ?> </p>

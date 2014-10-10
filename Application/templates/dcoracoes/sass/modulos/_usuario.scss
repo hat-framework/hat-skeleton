@@ -1,0 +1,38 @@
+#tela_login{
+    position: relative;
+    .form_item{
+        float: left;
+    }
+} 
+#lcodcorretora{
+     position: relative;
+    .form_item{
+        float: left;
+    }
+}
+#a_criar-perfil{
+    @extend .btn;
+    @extend .btn-success;
+}
+#alterar_widget{
+    height: 380px;
+}
+
+.online{
+    @extend .green;
+}
+
+.inativo{
+    @extend .yellow;
+}
+
+#widget_searchuserwidget{  
+    #user_search{
+        margin:0 auto;
+        width: 95%;
+        height: 30px;
+    }
+    .subtitle{
+        text-align: center;
+    }
+}

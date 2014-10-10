@@ -1,0 +1,20 @@
+.action_perm{
+    @extend .btn;
+}
+
+.action_perm.visao{
+    @extend .btn-success;
+}
+
+.action_perm.show{ 
+    @extend .btn-primary;
+}
+.action_perm.block, .action_perm.apagar{
+    @extend .btn-danger;
+}
+
+table, .list-item {
+    .action_perm{
+        width: 100px;
+    }
+}

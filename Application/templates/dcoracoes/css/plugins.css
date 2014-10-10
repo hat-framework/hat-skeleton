@@ -1,0 +1,55 @@
+ul#plugins_plug{
+    list-style: none;
+}
+
+ul#plugins_plug .list_plugins_plug{
+    border: 1px solid #d6d6d6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    float: left;
+    height: 240px;
+    margin: 0 15px 15px 0;
+    overflow: hidden;
+    width: 140px;
+}
+
+ul#plugins_plug .edit{
+     background-image: none !important;
+}
+
+ul#plugins_plug .list_plugins_plug:hover{
+    background: #c6c6c6;
+    cursor: pointer;
+}
+
+ul#plugins_plug img{
+    width: 120px;
+    height: 120px;
+}
+
+ul#plugins_plug .container{
+    margin-left: 10px;
+}
+
+ul#plugins_plug .container .system,
+ul#plugins_plug .container .plugnome,
+ul#plugins_plug .container .isdefault,
+ul#plugins_plug .container .status{
+    display: none;
+}
+
+ul#plugins_plug .action_perm {
+    padding-left: 0px !important;
+    padding-right: 5px;
+    float: left;
+}
+
+ul#plugins_plug hr {
+    margin: 3px 0;
+}
+
+ul#plugins_plug span, .plugitem{
+    display: table;
+}
+
