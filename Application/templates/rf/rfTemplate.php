@@ -65,11 +65,14 @@
 
                         <div id="content" class="span12">
                         <!-- start: Content -->
-                            <div class="">
+                            <div>
                                 <?php
-                                    if(isset($show_links)) \classes\Component\Component::displayPathLinks($show_links);
+                                    //if(isset($show_links)) \classes\Component\Component::displayPathLinks($show_links);
                                     $this->LoadRegion("breadcrumb");
-                                    $this->LoadRegion("body-top");
+                                    classes\Component\widget::executeWidgets(array(
+                                        'site/menu/widgets/contextMenuWidget' => array(),
+                                    ));
+                                    //$this->LoadRegion("body-top");
                                 ?>
                             </div>
 
