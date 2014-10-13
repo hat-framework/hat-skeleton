@@ -7,7 +7,7 @@
         'bootstrap/dist/css/bootstrap.min', 
         'bootstrap/dist/css/bootstrap-theme.min'
     ));
-    $this->Html->LoadCss(array('modulos/dcoracoes', 'fontawesome/css/font-awesome.min', 'style'));
+    $this->Html->LoadCss(array('fontawesome/css/font-awesome.min','modulos/dcoracoes', 'fontawesome/css/font-awesome.min', 'style'));
     $this->LoadHead(
        '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="apple-touch-fullscreen" content="yes" />
