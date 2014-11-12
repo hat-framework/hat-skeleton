@@ -37,6 +37,7 @@
     "bootstrap": "~3.2.0",
     "cloud-zoom": "https://github.com/smurfy/cloud-zoom.git#~1.0.2",
     "financee-angucomplete": "https://github.com/Finance-e/angucomplete.git#~0.0.1",
+    "financee-angularcharts": "https://github.com/Finance-e/angularcharts.git#~0.5.3",
     "hatframework-hatjs-form": "https://github.com/hat-framework/hatjs-form.git#~0.2.4",
     "imperavi-redactor-widget": "https://github.com/yiiext/imperavi-redactor-widget.git#~1.2.22",
     "jquery": "~1.10.2",

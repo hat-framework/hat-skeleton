@@ -29,7 +29,6 @@ body {
 }
 
 hr {
-  	margin: 20px 0;
   	border: 0;
   	border-top: 1px solid #e0dfdf;
   	border-bottom: 1px solid #fefefe;
@@ -37,7 +36,9 @@ hr {
 
 
 
-
+ul {
+    list-style-type: none;
+}
 
 .well {
 	border: 1px solid #ddd;
@@ -48,32 +49,6 @@ hr {
 	-webkit-border-radius: 2px;
        -moz-border-radius: 2px;
 	        border-radius: 2px;
-}
-
-.breadcrumb {
-	margin-top: 27px;
-	border: 1px solid #3c4049;
-	color: #fff;
-  	background-color: #4e525d;
-  	background-image: -moz-linear-gradient(top, #4e525d, #3c4049);
-  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4e525d), to(#3c4049));
-  	background-image: -webkit-linear-gradient(top, #4e525d, #3c4049);
-  	background-image: -o-linear-gradient(top, #4e525d, #3c4049);
-  	background-image: linear-gradient(to bottom, #4e525d, #3c4049);
-  	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#4e525d', endColorstr='#3c4049', GradientType=0);
-  	-webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-	        border-radius: 2px; 	
-        height: 20px;
-        a {
-            color: #fff;
-            text-shadow: none;	
-            
-        }
-        .divider{
-            padding: 0 5px;
-            color: #ccc!important;
-        }
 }
 .box-small {
 	text-align: center;
@@ -138,9 +113,7 @@ hr {
 
 
 .box-header {
-	height: 20px;
   	border: 1px solid #ddd;
-	margin-bottom: -1px;
   	padding: 10px;
   	background-color: #fafafa;
   	background-image: -moz-linear-gradient(top, #fafafa, #efefef);
@@ -978,11 +951,11 @@ input[type="file"],
 
 .login-box input[type="text"],
 .login-box input[type="password"] {
-	border: 1px solid #eee !important;
+/*	border: 1px solid #eee !important;*/
 	color: #aaa;
-	border-left: none !important;
-	-webkit-box-shadow: none;
-       -moz-box-shadow: none;
+/*	border-left: none !important;*/
+/*	-webkit-box-shadow: none;
+       -moz-box-shadow: none;*/
           	box-shadow: none;
 	height: 42px !important;		
 }

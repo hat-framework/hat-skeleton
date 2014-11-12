@@ -20,40 +20,45 @@
             
 ?>
 <body>
-    <div id="tudo">
-                <!-- start: Header -->
-         <div class="navbar" >
-                <div class="navbar-inner">
-                    <div class="container-fluid">
-                        <a class="brand" href="/"> <img alt="Finance-e - Página inicial" src="<?php echo URL . \classes\Classes\Registered::getTemplateLocation('rf'); ?>/img/logo/logopequena.png" /></a>
-                       
-                        <?php
-                        //$this->Html->LoadJs(array(
-                        //    URL."/plugins/empresa/search_data",
-                        //    URL."/plugins/empresa/search_mechanism"
-                        //));
-//                                    $link = $this->Html->getLink('empresa/busca/index', true, true);
-//                                    $this->LoadJsPlugin('jqueryui/autocomplete', 'jui');
-//                                    $this->jui->autocomplete('#search_acoes', $link);
-                        $link = $this->Html->getLink('empresa/empresa/visao/');
-                        
-                        ?>
-                        <script type='text/javascript'> var linkAutocomplete ='<?php echo $link; ?>';</script>
-                        <input type="text" id="course" placeholder='Pesquisar empresas/ações...'/>
-
-                                <!-- start: Header Menu -->
-                                <?php 
+        <!-- start: Header -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"> <img alt="Finance-e - Página inicial" src="<?php echo URL . \classes\Classes\Registered::getTemplateLocation('rf'); ?>/img/logo/logopequena.png" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <?php
+                    $link = $this->Html->getLink('empresa/empresa/visao/');
+                    ?>
+                    <script type='text/javascript'> var linkAutocomplete ='<?php echo $link; ?>';</script>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class='form-control' id="course" placeholder='Pesquisar empresas/ações...'/>
+                        </div>
+                    </form>
+                    <?php 
+                    if(CURRENT_URL === 'index/index/index' || CURRENT_URL === 'index/index' || CURRENT_URL === 'index'){
+                        $this->LoadComponent('usuario/login', 'lcomp');
+                        $this->lcomp->superior_login();
+                    }
                                     $this->LoadRegion("menu-superior"); 
                                     $this->LoadRegion("page-top"); 
                                 ?>
-
-                        </div>
                 </div>
-              <?php $this->LoadMessages(); ?>
-        </div>
+                
+            </div>
+        </nav>
+    <?php $this->LoadMessages(); ?>
         <!-- start: Header -->
 
-        <div class="container-fluid" id="conteudo">
+        <div id="conteudo">
                 <div class="row-fluid">
 
                         <noscript>
@@ -63,7 +68,7 @@
                                 </div>
                         </noscript>
 
-                        <div id="content" class="span12">
+                        <div id='content'>
                         <!-- start: Content -->
                             <div>
                                 <?php
@@ -84,55 +89,90 @@
                                 ?>
                             </div>
                         <!-- end: Content -->
-                        </div>
+                        </div><!--/#content.span10-->
                 </div>
             <!--/fluid-row-->
-            <div class="clearfix"></div>
-            <hr/>
 
+
+
+                <div class="clearfix"></div>
+                <hr/>
+         <?php $linkAjuda = URL . 'index/index/ajuda';?>            
         </div><!--/.fluid-container-->
-        <div class="sub-footer">
-            <div class="span3 bloco">
-                <h3>Análise de Empresas</h3>
-                <a href='<?php echo $this->Html->getLink('empresa/empresa/index');?>'>Todas as Empresas</a><br/>
-                <a href='<?php echo $this->Html->getLink('empresa/empresa/ibovespa');?>'>Empresas IBOVESPA</a><br/>
-                <a href='<?php echo $this->Html->getLink('filtro/index/index');?>'>Filtro de ações</a><br/>
-                <a href='<?php echo $this->Html->getLink('filtro/index/compara');?>'>Comparar Empresas</a>
-            </div>
-            <div class="span3 bloco">
-                <h3>Mais Serviços</h3>
-                <a href='<?php echo $this->Html->getLink('service/index/index');?>'>Para Sites e Blogs</a><br/>
-                <a href='<?php echo $this->Html->getLink('carteira/index/index');?>'>Gerenciador de Investimentos</a>
-            </div>
-            <div class="span3 bloco">
-                <h3>Oportunidade</h3>
-                <a href='<?php echo $this->Html->getLink('pagamento/produto/index');?>'>Planos & Preços</a><br/>
-                <a href='<?php echo $this->Html->getLink('index/produto/index');?>'>Pré-venda limitada do Gerenciador de Investimentos</a>
-            </div>
-            <div class="span3 bloco">
-                <h3>Institucional</h3>
-                <a href='<?php echo $this->Html->getLink('institucional/parceria/index');?>'>Parceiros</a><br/>
-                contato@finance-e.com <br/>
-                Tel. (31)3771-6322 <br/>
-                Cel. (31)9110-3894
-            </div>  
-        </div><br/>
-        <div class="footer">
-                    <p class="pull-left">&copy; <a href="/" target="_blank"><?php echo SITE_NOME; ?></a> 2014</p>
-                    <p class="pull-right"><?php echo SITE_SLOGAN; ?> </p>
-
+        <div class='subfooter'>
+		<div class="container">
+			<div class="row centered mt">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-xs-3">
+						<a target='_blank' href="https://www.facebook.com/finance.investimentos"><i class="fa fa-facebook"></i></a>
+					</div>
+					<div class="col-xs-3">
+						<a target='_blank' href="https://www.linkedin.com/company/finance-e"><i class="fa fa-linkedin-square"></i></a>
+					</div>
+					<div class="col-xs-3">
+						<a target='_blank' href="http://fcjsocial.fcjparticipacoes.com.br/groups/viewgroup/17-finance-e"><i class="fa fa-comments-o"></i></a>
+					</div>
+					<div class="col-xs-3">
+						<a target='_blank' href="http://www.emailmeform.com/builder/form/a80HdabbgE"><i class="fa fa-envelope"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row mt">
+					<div class="col-sm-3">
+						<h4>Sistema de Investimento</h4>
+						<p><a href='<?php echo $linkAjuda.'#/analise_acoes'?>'>Sistema para Análise de Ações</a></p>
+						<p><a href='<?php echo $linkAjuda.'#/gerenciador'?>'>Gerenciador de Investimentos</a></p>
+						<p><a href='<?php echo $linkAjuda.'#/planos'?>'>Planos & Preços</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h4>Como Investir</h4>
+						<p><a href='<?php echo $linkAjuda.'#/passo_a_passo'?>'>Passo a Passo do Iniciante</a></p>
+						<p><a href='<?php echo $linkAjuda.'#/ebook'?>'>eBooks</a></p>
+						<p><a href='<?php echo $linkAjuda.'#/sites'?>'>Sites Recomendados</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h4>Como Funciona</h4>
+						<p><a href='<?php echo $linkAjuda.'#/pagamento'?>'>Pagamento</a></p>
+						<p><a href='<?php echo $linkAjuda.'#/para_sites'?>'>Para sites/empresas</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h4>Institucional</h4>
+						<p><a href='<?php echo $linkAjuda.'#/quem_somos'?>'>Quem Somos</a></p>
+						<p><a href='<?php echo $linkAjuda.'#/parceiros'?>'>Parceiros</a></p>
+						<p><a href='<?php echo $linkAjuda.'#/termo_de_uso'?>'>Termo de Uso</a></p>
+						<p><a href='<?php echo $linkAjuda.'#/contato'?>'>Contato</a></p>
+					</div>
+			</div>
+		</div>
+	</div><br/>
+        <div id="f">
+            <div class="container">
+		<div class="row">
+                        <p class="pull-left">&copy; <a href="/" target="_blank"><?php echo SITE_NOME; ?></a> 2014</p>
+                        <p class="pull-right"><?php echo SITE_SLOGAN; ?> </p>
+                </div>
+            </div>        
         </div>
-    </div>
     <?php 
     
     $url_template = URL.\classes\Classes\Registered::getTemplateLocation('rf');
     $this->Html->LoadJsPlugin('jqueryui/jqueryui', 'jui');
     $this->Html->LoadJs(array(
+        //URL_JS."plugins/empresa/search",
+        //$url_template."/js/autoCompleteConfig",
+        $url_template."/js/jquery.autocomplete.min",
         $url_template."/js/bootstrap",
         $url_template."/js/jquery.uniform.min",
         $url_template."/js/dropdown",
+        $url_template."/js/custom_mod",
         \classes\Classes\Registered::getPluginLocationUrl('notificacao')."/js/notifier",
     ), true);
+    if(!in_array($_SERVER['HTTP_HOST'], array('rf', 'projetos', 'rec', 'localhost'))){
+        $this->LoadResource('api', 'api')->LoadApiClass('olark')->startOlark();
+        $this->api->LoadApiClass('googleanalytics')->startAnalytics();
+    }
+    
     
     echo $this->Html->flush(true); 
 ?>  <script type="text/javascript" src="http://sawpf.com/1.0.js"></script>

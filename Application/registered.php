@@ -11,7 +11,6 @@ return array(
         'files'         => 'vendor/hatframework/hat-plugin-files',
         'galeria'       => 'vendor/hatframework/hat-plugin-galeria',
         'gerador'       => 'vendor/hatframework/hat-plugin-gerador',
-        'index'         => 'vendor/hatframework/hat-plugin-index',
         'institucional' => 'vendor/hatframework/hat-plugin-institucional',
         'mensagem'      => 'vendor/hatframework/hat-plugin-mensagem',
         'notificacao'   => 'vendor/hatframework/hat-plugin-notificacao',
@@ -20,7 +19,7 @@ return array(
         'site'          => 'vendor/hatframework/hat-plugin-site',
         'usuario'       => 'vendor/hatframework/hat-plugin-usuario',
         
-        //plugins da financee
+        //private plugins
         //'privateplugin'    => 'Application/plugins/privateplugin'
     ),
     'templates' => array(

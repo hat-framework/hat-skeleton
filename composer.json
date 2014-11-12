@@ -5,12 +5,11 @@
     "keywords": [],
     "homepage": "https://github.com/hat-framework/hat-skeleton",
     "license": "MIT",
- 
     "require": {
         "aws/aws-sdk-php": "dev-master",
         "php": ">=5.3.0",
         "omnipay/paypal": "~2.0",
         "tritoq/cielo": "dev-master",
-        "hatframework/hat-dependences": "0.1.54"
+        "hatframework/hat-dependences": "0.1.80"
     }
 }
