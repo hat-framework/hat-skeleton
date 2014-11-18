@@ -66,5 +66,10 @@
     "SoundManager2": "https://github.com/scottschiller/SoundManager2.git",
     "tinymce": "~4.0.0",
     "uploadify": "~3.2.1"
-  }
+  },
+    "resolutions": {
+      "jquery": "~2.1.1",
+      "jquery-ui": "~1.11.1",
+      "Jquery-Price-Format": "~2.0.0"
+    }
 }
