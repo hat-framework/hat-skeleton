@@ -8,6 +8,8 @@ return array(
         'app'           => 'vendor/hatframework/hat-plugin-app',
         'blog'          => 'vendor/hatframework/hat-plugin-blog',
         'contato'       => 'vendor/hatframework/hat-plugin-simplecontact',
+        'config'        => 'vendor/hatframework/hat-plugin-config',
+        
         'files'         => 'vendor/hatframework/hat-plugin-files',
         'galeria'       => 'vendor/hatframework/hat-plugin-galeria',
         'gerador'       => 'vendor/hatframework/hat-plugin-gerador',
@@ -20,7 +22,7 @@ return array(
         'usuario'       => 'vendor/hatframework/hat-plugin-usuario',
         
         //private plugins
-        //'privateplugin'    => 'Application/plugins/privateplugin'
+        //'index'    => 'Application/plugins/index'
     ),
     'templates' => array(
         'core'       => 'vendor/hatframework/hat-template-core',

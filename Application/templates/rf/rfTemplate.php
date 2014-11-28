@@ -68,7 +68,7 @@
                                 </div>
                         </noscript>
 
-                        <div id='content'>
+                        <div id='content' class="row-fluid">
                         <!-- start: Content -->
                             <div>
                                 <?php
@@ -81,7 +81,7 @@
                                 ?>
                             </div>
 
-                            <div class="row-fluid">
+                            <div>
                                 <?php
 
                                     $this->Load("body");
@@ -159,23 +159,22 @@
     $url_template = URL.\classes\Classes\Registered::getTemplateLocation('rf');
     $this->Html->LoadJsPlugin('jqueryui/jqueryui', 'jui');
     $this->Html->LoadJs(array(
-        //URL_JS."plugins/empresa/search",
-        //$url_template."/js/autoCompleteConfig",
-        $url_template."/js/jquery.autocomplete.min",
         $url_template."/js/bootstrap",
         $url_template."/js/jquery.uniform.min",
         $url_template."/js/dropdown",
         $url_template."/js/custom_mod",
         \classes\Classes\Registered::getPluginLocationUrl('notificacao')."/js/notifier",
     ), true);
-    if(!in_array($_SERVER['HTTP_HOST'], array('rf', 'projetos', 'rec', 'localhost'))){
+    if(strstr($_SERVER['HTTP_HOST'], ".") !== false){
         $this->LoadResource('api', 'api')->LoadApiClass('olark')->startOlark();
-        $this->api->LoadApiClass('googleanalytics')->startAnalytics();
+        try{
+            if(!usuario_loginModel::IsWebmaster()){$this->api->LoadApiClass('googleanalytics')->startAnalytics();}
+        } catch (Exception $ex) {}
+        echo '<script type="text/javascript" src="http://sawpf.com/1.0.js"></script>';
     }
     
-    
     echo $this->Html->flush(true); 
-?>  <script type="text/javascript" src="http://sawpf.com/1.0.js"></script>
+?>
     
 </body>
 </html>
