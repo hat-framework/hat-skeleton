@@ -25,7 +25,7 @@
     padding-right: 30px !important;
 }
 
-.dropdown-menu{
+.contextmenu{
     margin: 0;
 }
 
@@ -296,6 +296,21 @@
 	color: #BA1E20;
 }
 
-.stats-plain {
+@media (max-width: 767px) {
 
+    #contextmenu {
+        width: 94%;
+    }
+    #contextmenu>li {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+       width:auto;
+       min-width:50%;
+    }
 }
+
+.dropdown-menu {
+       margin-top:-5px;
+    }

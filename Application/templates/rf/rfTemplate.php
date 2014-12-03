@@ -1,6 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <?php
+    
+    //analytics movido para o header de acordo com a recomendação do google...
+    $str = $this->LoadResource('api', 'api')->LoadApiClass('googleanalytics')->startAnalytics('', false);
 
     //os css estão sendo carregados no arquivo head.php motivo: requisições onde tem o /ajax
     $this->LoadHead(
@@ -14,7 +17,7 @@
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->  
-    ');
+    '. $str);
     
     $this->Html->LoadJs(array("lib/baseurl", 'lib/haturl'), true);
             
@@ -166,9 +169,8 @@
         \classes\Classes\Registered::getPluginLocationUrl('notificacao')."/js/notifier",
     ), true);
     if(strstr($_SERVER['HTTP_HOST'], ".") !== false){
-        $this->LoadResource('api', 'api')->LoadApiClass('olark')->startOlark();
         try{
-            if(!usuario_loginModel::IsWebmaster()){$this->api->LoadApiClass('googleanalytics')->startAnalytics();}
+            $this->api->LoadApiClass('olark')->startOlark('');
         } catch (Exception $ex) {}
         echo '<script type="text/javascript" src="http://sawpf.com/1.0.js"></script>';
     }

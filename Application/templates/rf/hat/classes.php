@@ -30,7 +30,7 @@ return array(
   'subscribe'     => array('subscribeClass'  => ''),
   'superior_login' => array(
       'superior_loginClass' => 'pull-right col-xs-3 hidden-xs',
-      's_esqueci_senha' => 'col-xs-6 btn btn-danger btn-xs',
+      's_esqueci_senha' => 'col-xs-6 btn btn-default btn-xs',
       's_facebook'    => 'col-xs-6',
       's_formbutton'  => 'btn btn-inverse',
       'text_facebook' => 'Entrar com <i class="fa fa-facebook-square"></i>'

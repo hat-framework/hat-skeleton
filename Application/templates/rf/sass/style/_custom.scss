@@ -69,15 +69,29 @@ html, body {
     @include border-radius(5px);
     @include box-shadow(4px 2px 24px rgba(0, 0, 0, 0.54));
     
-    
     background-color: #FFF;
     margin: 0 5px 5px 0;
-    overflow: auto;
 }
 
 .widget{
    @extend .widget_system;
 }
+
+#tela_cadastro{
+    .widget{
+        overflow: auto;
+    }
+}
+
+.panel-body{
+    padding:10px;
+}
+
+.widget_content{
+    @extend .panel-body
+}
+
+
 
 .icon-gear{
     background: url(../img/icon-gear.png);
@@ -207,4 +221,8 @@ a:after {
 .fa{
     padding: 3px!important;
 
+}
+
+#widget_filtrowidget{
+    overflow: visible;
 }
